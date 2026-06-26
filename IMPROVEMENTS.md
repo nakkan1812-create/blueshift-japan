@@ -87,12 +87,12 @@
   - 「LLC/Inc.」は日本の商号に会社種別として使えないため、**登記上は「合同会社」**。英語は LLC を使用。
   - **"Inc." はサイト・ロゴ・LinkedIn・名刺から全削除する。**
 - **棚卸し対象（"Inc." → 新名称へ一括置換）**:
-  - [ ] 全 *.html の社名表記
-  - [ ] `favicon.svg` / ロゴ画像
-  - [ ] `card.html`（名刺）
-  - [ ] LinkedIn / 各種プロフィール
-  - [ ] リポジトリ名 `blueshift-inc` / ドメイン `blueshift-inc.jp`（変更要否を検討）
-  - [ ] `CNAME`（ドメイン変更する場合）
+  - [x] 全 *.html の社名表記 → **Blueshift Japan LLC**（完了）
+  - [x] `favicon.svg` / ロゴ画像（社名テキストは更新済。ロゴ画像内に旧社名は無し）
+  - [x] `card.html`（名刺）→ 社名・肩書き「代表社員 CEO」・新ドメイン反映（完了）
+  - [ ] LinkedIn / 各種プロフィール（**本人対応中**：会社ページ名・職歴の "Blueshift Inc." を更新）
+  - [x] リポジトリ名 `blueshift-inc` → **`blueshift-japan`**（完了）／ ドメイン `blueshift-inc.jp` → **`blueshift-japan.com`**（完了）
+  - [x] `CNAME` → **blueshift-japan.com**（完了）／ メールも **ceo@blueshift-japan.com** に統一
 
 ---
 
@@ -209,6 +209,25 @@
   役員報酬を取ると社会保険が別途。合同会社は決算公告不要・役員任期なし（重任登記不要）で維持が軽い。
 
 > ※ 定款文言・税務・社会保険・商標の最終確認は **司法書士・税理士・弁理士** に相談（私は法律/税務の専門家ではない）。
+
+---
+
+## 6. 実装ログ（2026-06-26 公開済み）
+
+本番サイトに反映・公開済みの変更：
+
+- **社名**: "Blueshift Inc." → **Blueshift Japan LLC**（全ページ）
+- **納期**: 3–5 → **5–15営業日**／プラン別 Starter 5・Standard 7–10・Premium 10–15
+- **価格**: Standard ドル表記 → **$5,000**（¥700K据え置き）
+- **NDA/守秘**: `sample`→`index` に Confidentiality セクション新設、`brief.html` に守秘文言＋「NDA on request」
+- **名刺**: 肩書き → **代表社員 CEO**（合同会社の正式表記）
+- **ドメイン**: `blueshift-inc.jp` → **`blueshift-japan.com`**（CNAME・全リンク・canonical・mailを移行）
+- **メール**: → **ceo@blueshift-japan.com**
+- **ホーム**: 旧 `sample.html` を廃止し、ランディングを**ルート `index.html`** に（URLから "sample" を排除）
+- **リポジトリ名**: `blueshift-inc` → **`blueshift-japan`**
+
+**残ToDo（本人/次回）**: LinkedIn会社ページ名・職歴の更新／GitHub Pages「Enforce HTTPS」ON／登記手続き（5-3）／
+HP残改善（実績・Founding Client・AIプロセス図解・業界フォーカス・プラン内訳表）／who・index の「現職Sumitomo」表記の扱い。
 
 ---
 
